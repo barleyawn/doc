@@ -26,7 +26,7 @@
 
 >   Service是定义一系列Pod以及访问这些Pod的策略的一层抽象。Service通过Label找到Pod组。那Service是如何确保我们能正确访问容器呢？
 
-    Service创建一个本地集群的DNS入口，我们只需要通过DNS查找主机名为 ‘backend-service’，就能够解析出前端应用程序可用的IP地址。现在前端已经得到了后台服务的IP地址，但是它应该访问2个后台Pod的哪一个呢？Service在这2个后台Pod之间提供透明的负载均衡，会将请求分发给其中的任意一个（如下面的动画所示）。通过每个Node上运行的代理（kube-proxy）完成。
+    创建Service时会指定名称, 这时Service会创建一个本地集群的DNS入口，我们只需要通过DNS查找主机名为 ‘test’，就能够解析出前端应用程序可用的IP地址。现在前端已经得到了后台服务的IP地址，但是它应该访问2个后台Pod的哪一个呢？Service在这2个后台Pod之间提供透明的负载均衡，会将请求分发给其中的任意一个。通过每个Node上运行的代理（kube-proxy）完成。
 
 ![service](http://dockone.io/uploads/article/20190625/e7a273fcdc03d2417b354b60c253552f.gif)
 
