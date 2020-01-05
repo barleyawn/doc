@@ -1,6 +1,6 @@
 # **[使用kubeadm安装kubernates 1.12](https://www.kubernetes.org.cn/3536.html)**
 ## 一、整体架构
-![架构](../img/components-of-kubernetes.png)
+![架构](https://d33wubrfki0l68.cloudfront.net/817bfdd83a524fed7342e77a26df18c87266b8f4/3da7c/images/docs/components-of-kubernetes.png)
 > 如图，kubenetes包含以下组件：
 
 ### ETCD
